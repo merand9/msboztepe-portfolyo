@@ -1,0 +1,60 @@
+ body {
+      background-color: #867e89;
+    }
+	
+
+.foto{
+	border:2px solid black;
+	padding:2px;
+	margin-top: 60px;
+	margin-left: 20px;
+	width: 400px;
+	height: 500px;
+	display: inline-block;
+}
+
+.foto-yazi{
+	display:flex;
+	align-items: center;
+	padding: 20px;
+  }
+  .yazi p {
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	margin: 10px;
+	display: inline-block;
+  }
+  
+  @media screen and (max-width: 800px) {
+	.yazi p {
+	  font-size: 17px;
+	}
+  }
+  
+  @media screen and (max-width: 400px) {
+	.yazi p {
+	  font-size: 14px;
+	}
+  }
+
+  .navbar-nav .nav-link{
+	font-family: 'Times New Roman', Times, serif;
+	font:bold;
+  }
+  .navbar-nav .nav-link:hover{
+	   background-color: #867e89;
+	   color: black;
+
+  }
+  .navbar-nav .nav-link:active{
+	background-color: white;
+	color:#867e89
+  }
+  
+
+
+
+		
+		
+		
+
