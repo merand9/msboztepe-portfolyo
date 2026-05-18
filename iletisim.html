@@ -4,86 +4,76 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <meta name="author" content="Merve Sude Boztepe">
-   <title>Merve Sude Boztepe|Portföy</title>
+   <title>Merve Sude Boztepe | Portföy</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
    <link rel="stylesheet" href="style.css">
    <style>
-    #kutucuklar{
-         background-color:black;
-         color: white;
-     }
+    #kutucuklar {
+      background-color: black;
+      color: white;
+    }
    </style>
 </head>
 <body>
-<div>
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-   <div class="container-fluid">
-     <ul class="navbar-nav">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
       <li class="nav-item">
-         <a class="nav-link" href="index.html">Ana Sayfa</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="hakkimda.html">Hakkımda</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="projelerim.html">Projeler</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="iletisim.html">İletişim</a>
-       </li>
-     </ul>
-   </div>
- </nav>
-
- <div class="container mt-5">
-    <div class="row text-center">
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-          <div class="card-body">
-            <h5 class="card-title"><img src="mail.jpg" width="40px" height="40px"></h5>
-            <p class="card-text">msboztepee@gmail.com</p>
-            <a href="#" class="btn btn-success">Mail Yolla</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-          <div class="card-body">
-            <h5 class="card-title"><img src="telefon.jpg" width="40px" height="40px"></h5>
-            <p class="card-text">0555 555 5555</p>
-            <a href="#" class="btn btn-success">Telefon Et</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-          <div class="card-body">
-            <h5 class="card-title"><img src="linkedin.png" width="40px" height="40px"></h5>
-            <p class="card-text">LİNKEDIN</p>
-            <a href="https://www.linkedin.com/in/merve-sude-boztepe-831797293/" class="btn btn-success">Linkedin Profili</a>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </div>
-  <div style="border:2px solid black;display:inline-block;margin-left: 120px;background-color: white;">
-    <h1>Bana Ulaşmak için ↓</h1>
-   <form>
-    <ul style="list-style: none;">
-        <li><input id="kutucuklar" type="text" placeholder="Ad-Soyad"></li>
-        <li><input id="kutucuklar" type="email" placeholder="e-posta"></li>
-        <li><textarea id="kutucuklar" placeholder="Mesajınız..." rows="6" cols="30"> </textarea></li>
-        <a href="#" class="btn btn-success">Gönder</a>
+        <a class="nav-link" href="index.html">Ana Sayfa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projelerim.html">Projeler</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="iletisim.html">İletişim</a>
+      </li>
     </ul>
-
-   </form>
   </div>
-  
-   
+</nav>
+
+<div class="container mt-5 pt-4">
+  <div class="row text-center">
+
+    
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title"><img src="mail.jpeg" width="40px" height="40px" alt="Mail"></h5>
+          <p class="card-text">msboztepee@gmail.com</p>
+          <a href="mailto:msboztepee@gmail.com" class="btn btn-success">Mail Yolla</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title"><img src="github.png" width="40px" height="40px" alt="GitHub"></h5>
+          <p class="card-text">GitHub</p>
+          <a href="https://github.com/merand9" target="_blank" class="btn btn-success">GitHub Profili</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title"><img src="linkedin.jpeg" width="40px" height="40px" alt="LinkedIn"></h5>
+          <p class="card-text">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/merve-sude-boztepe-831797293/" target="_blank" class="btn btn-success">LinkedIn Profili</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
+
 </body>
 </html>
