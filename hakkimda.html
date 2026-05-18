@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <meta name="author" content="Merve Sude Boztepe">
-   <title>Merve Sude Boztepe|Portföy</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
-   <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Merve Sude Boztepe">
+  <title>Merve Sude Boztepe | Hakkımda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #867e89;
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.4rem;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+    }
+    .badge-skill {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 3px;
+      font-weight: 500;
+    }
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #198754;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
     
     #buton {
       display: none;
@@ -24,66 +57,138 @@
       padding: 15px;
       border-radius: 4px;
     }
-    
     #buton:hover {
       background-color: #867e89;
     }
-    </style>
-    
-<button onclick="topFunction()" id="buton" title="Go to top">Başa Dön</button>
-
-
-
-<script>
-
-let mybutton = document.getElementById("buton");
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-   
+  </style>
 </head>
 <body>
-<div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Ana Sayfa</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hakkimda.html">Hakkımda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projelerim.html">Projeler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="iletisim.html">İletişim</a>
-            </li>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Ana Sayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="hakkimda.html">Hakkımda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projelerim.html">Projeler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-4 pb-5">
+
+    <div class="card shadow-sm p-4 mb-4">
+      <div class="d-flex align-items-center gap-4">
+        <div>
+          <h1 class="h3 mb-1 fw-bold">Merve Sude Boztepe</h1>
+          <p class="text-muted mb-0">Yazılım Mühendisliği Öğrencisi · Flutter Geliştirici</p>
+          <p class="text-muted small mb-0">Bandırma Onyedi Eylül Üniversitesi</p>
+        </div>
+      </div>
+      <hr>
+      <p class="mb-0" style="line-height: 1.8;">
+        Mobil uygulama geliştirme ve veri analizine ilgi duyan bir yazılım mühendisliği öğrencisiyim.
+        Flutter/Dart ile mobil projeler geliştirmenin yanı sıra makine öğrenmesi ve veri tabanı tasarımı
+        alanlarında da çalışmalar yürütmekteyim. Staj sürecinde gerçek bir şirket projesine katkı sağlayarak
+        profesyonel yazılım geliştirme deneyimi edindim.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-7">
+
+        <div class="card shadow-sm p-4 mb-4">
+          <p class="section-title">İş Deneyimi</p>
+          <div class="d-flex gap-3">
+            <div class="timeline-dot mt-1"></div>
+            <div>
+              <h6 class="fw-bold mb-0">Flutter Geliştirici Stajyeri</h6>
+              <p class="text-muted small mb-2">Argede Bilişim ve Teknolojileri San. Tic. Ltd. Şti. · 2024 Yaz Dönemi</p>
+              <ul class="mb-0" style="padding-left: 1.2rem; line-height: 1.9;">
+                <li>Şirketin aktif mobil projesi olan Ramakkala uygulamasında Flutter/Dart kullanarak yeni özellikler geliştirdim.</li>
+                <li>Yeniden kullanılabilir widget tabanlı arayüz bileşenleri tasarladım ve uyguladım.</li>
+                <li>Sayfalar arası navigasyon ve state management yapısını kurarak uygulama akışını iyileştirdim.</li>
+                <li>Test süreçlerine katılarak hataları tespit ettim ve raporladım.</li>
+                <li>Android (APK) ve iOS için uygulama dağıtım süreçlerinde görev aldım.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm p-4 mb-4">
+          <p class="section-title">Eğitim</p>
+          <div class="d-flex gap-3">
+            <div class="timeline-dot mt-1"></div>
+            <div>
+              <h6 class="fw-bold mb-0">Yazılım Mühendisliği</h6>
+              <p class="text-muted small mb-0">Bandırma Onyedi Eylül Üniversitesi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-5">
+
+        <div class="card shadow-sm p-4 mb-4">
+          <p class="section-title">Teknolojiler</p>
+          <div>
+            <span class="badge bg-primary badge-skill">Flutter</span>
+            <span class="badge bg-secondary badge-skill">Dart</span>
+            <span class="badge bg-warning text-dark badge-skill">Python</span>
+            <span class="badge bg-dark badge-skill">C#</span>
+            <span class="badge bg-danger badge-skill">HTML / CSS</span>
+            <span class="badge bg-info text-dark badge-skill">Bootstrap</span>
+            <span class="badge bg-success badge-skill">MongoDB</span>
+            <span class="badge bg-danger badge-skill">MSSQL</span>
+            <span class="badge bg-secondary badge-skill">Pandas</span>
+            <span class="badge bg-info text-dark badge-skill">Scikit-learn</span>
+          </div>
+        </div>
+
+        <!-- Kişisel Bilgiler -->
+        <div class="card shadow-sm p-4 mb-4">
+          <p class="section-title">Dil & Kişisel Bilgiler</p>
+          <ul class="list-unstyled mb-0" style="line-height: 2;">
+            <li><span class="fw-semibold">İngilizce:</span> Temel · Geliştirme sürecinde</li>
+            <li><span class="fw-semibold">Beceriler:</span> Ekip çalışması · Zaman yönetimi · Yeniliklere açık</li>
+            <li><span class="fw-semibold">İlgi Alanları:</span> Veri analizi · Mobil uygulama geliştirme · Açık kaynak yazılım</li>
           </ul>
         </div>
-      
-      </nav>
-   
-<div>
-    <img style="margin-top:30px;margin-left:50px;" src="özgeçmiş.jpg">
-</div>
 
+      </div>
+    </div>
+  </div>
 
-</div>
+  <button onclick="topFunction()" id="buton" title="Başa dön">Başa Dön</button>
+
+  <script>
+    let mybutton = document.getElementById("buton");
+
+    window.onscroll = function() { scrollFunction(); };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
 </body>
 </html>
