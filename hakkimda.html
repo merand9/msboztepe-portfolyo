@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,9 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: #867e89;
-    }
     .section-title {
       font-size: 1rem;
       font-weight: 700;
@@ -33,6 +30,13 @@
       margin: 3px;
       font-weight: 500;
     }
+    .skill-group {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #6c757d;
+      margin: 10px 0 2px;
+    }
+    .skill-group:first-of-type { margin-top: 0; }
     .timeline-dot {
       width: 10px;
       height: 10px;
@@ -41,7 +45,7 @@
       margin-top: 6px;
       flex-shrink: 0;
     }
-    
+
     #buton {
       display: none;
       position: fixed;
@@ -86,19 +90,21 @@
   <div class="container mt-5 pt-4 pb-5">
 
     <div class="card shadow-sm p-4 mb-4">
-      <div class="d-flex align-items-center gap-4">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
         <div>
           <h1 class="h3 mb-1 fw-bold">Merve Sude Boztepe</h1>
           <p class="text-muted mb-0">Yazılım Mühendisliği Öğrencisi · Flutter Geliştirici</p>
           <p class="text-muted small mb-0">Bandırma Onyedi Eylül Üniversitesi</p>
         </div>
+        <a href="Merve_Sude_Boztepe_CV.pdf" class="btn btn-dark" download>CV'yi İndir (PDF)</a>
       </div>
       <hr>
       <p class="mb-0" style="line-height: 1.8;">
         Mobil uygulama geliştirme ve veri analizine ilgi duyan bir yazılım mühendisliği öğrencisiyim.
-        Flutter/Dart ile mobil projeler geliştirmenin yanı sıra makine öğrenmesi ve veri tabanı tasarımı
-        alanlarında da çalışmalar yürütmekteyim. Staj sürecinde gerçek bir şirket projesine katkı sağlayarak
-        profesyonel yazılım geliştirme deneyimi edindim.
+        Flutter/Dart ile mobil projeler geliştirmenin yanı sıra Python ile makine öğrenmesi ve
+        MSSQL/MongoDB ile veri tabanı tasarımı alanlarında çalışmalar yürütüyorum. Argede Bilişim'deki
+        stajımda şirketin aktif mobil projesi Ramakkala'ya katkı sağladım; SoftAI'daki stajımda ise
+        sahtekarlık tespiti üzerine çalıştım.
       </p>
     </div>
 
@@ -108,11 +114,26 @@
 
         <div class="card shadow-sm p-4 mb-4">
           <p class="section-title">İş Deneyimi</p>
+          <div class="d-flex gap-3 mb-4">
+            <div class="timeline-dot mt-1"></div>
+            <div>
+              <h6 class="fw-bold mb-0">Stajyer · Sahtekarlık Tespiti</h6>
+              <p class="text-muted small mb-2">SoftAI · Yaz 2026 (1 ay)</p>
+              <ul class="mb-0" style="padding-left: 1.2rem; line-height: 1.9;">
+                <li>Finansal işlem verileri üzerinde sahtekarlık (fraud) tespitine yönelik makine öğrenmesi modelleri geliştirdim.</li>
+                <li>Pandas ile veri temizleme, eksik veri işleme ve özellik mühendisliği (feature engineering) çalışmaları yaptım.</li>
+                <li>Dengesiz veri problemini SMOTE ve undersampling yöntemleriyle ele aldım.</li>
+                <li>Logistic Regression, Random Forest ve XGBoost modellerini karşılaştırdım.</li>
+                <li>Model başarısını precision, recall, F1 ve ROC-AUC metrikleriyle değerlendirip raporladım.</li>
+                <li><span class="fw-semibold">Teknolojiler:</span> Python, Pandas, Scikit-learn, XGBoost</li>
+              </ul>
+            </div>
+          </div>
           <div class="d-flex gap-3">
             <div class="timeline-dot mt-1"></div>
             <div>
               <h6 class="fw-bold mb-0">Flutter Geliştirici Stajyeri</h6>
-              <p class="text-muted small mb-2">Argede Bilişim ve Teknolojileri San. Tic. Ltd. Şti. · 2024 Yaz Dönemi</p>
+              <p class="text-muted small mb-2">Argede Bilişim ve Teknolojileri San. Tic. Ltd. Şti. · Yaz 2025</p>
               <ul class="mb-0" style="padding-left: 1.2rem; line-height: 1.9;">
                 <li>Şirketin aktif mobil projesi olan Ramakkala uygulamasında Flutter/Dart kullanarak yeni özellikler geliştirdim.</li>
                 <li>Yeniden kullanılabilir widget tabanlı arayüz bileşenleri tasarladım ve uyguladım.</li>
@@ -130,9 +151,24 @@
             <div class="timeline-dot mt-1"></div>
             <div>
               <h6 class="fw-bold mb-0">Yazılım Mühendisliği</h6>
-              <p class="text-muted small mb-0">Bandırma Onyedi Eylül Üniversitesi</p>
+              <p class="text-muted small mb-0">Bandırma Onyedi Eylül Üniversitesi · 2023 – Devam Ediyor</p>
+              <p class="small mb-0">GPA: 3.11 / 4.00</p>
             </div>
           </div>
+        </div>
+
+        <div class="card shadow-sm p-4 mb-4">
+          <p class="section-title">Sertifikalar</p>
+          <ul class="mb-0" style="padding-left: 1.2rem; line-height: 1.9;">
+            <li>Turkcell Akademi — Python 101 / 201 / 301</li>
+            <li>BTK Akademi — Sıfırdan İleri Seviye Python</li>
+            <li>Turkcell Akademi — Makine Öğrenmesi 101</li>
+            <li>Turkcell Akademi — Veri Bilimi ve Yapay Zekâya Giriş 101</li>
+            <li>BTK Akademi — Dart Programlama Dili</li>
+            <li>BTK Akademi — Flutter ile Mobil Uygulama Geliştirme</li>
+            <li>Udemy — C# Programlama Dili</li>
+            <li>Türk Patent — Patent Veri Tabanlarının Kullanımı</li>
+          </ul>
         </div>
 
       </div>
@@ -140,28 +176,63 @@
       <div class="col-md-5">
 
         <div class="card shadow-sm p-4 mb-4">
-          <p class="section-title">Teknolojiler</p>
+          <p class="section-title">Yetkinlikler</p>
+
+          <p class="skill-group">Programlama</p>
+          <div>
+            <span class="badge bg-warning text-dark badge-skill">Python</span>
+            <span class="badge bg-secondary badge-skill">Dart</span>
+            <span class="badge bg-dark badge-skill">C#</span>
+            <span class="badge bg-danger badge-skill">SQL</span>
+            <span class="badge bg-primary badge-skill">Java</span>
+            <span class="badge bg-secondary badge-skill">C</span>
+            <span class="badge bg-info text-dark badge-skill">JavaScript (Temel)</span>
+          </div>
+
+          <p class="skill-group">Mobil</p>
           <div>
             <span class="badge bg-primary badge-skill">Flutter</span>
-            <span class="badge bg-secondary badge-skill">Dart</span>
-            <span class="badge bg-warning text-dark badge-skill">Python</span>
-            <span class="badge bg-dark badge-skill">C#</span>
-            <span class="badge bg-danger badge-skill">HTML / CSS</span>
-            <span class="badge bg-info text-dark badge-skill">Bootstrap</span>
-            <span class="badge bg-success badge-skill">MongoDB</span>
+            <span class="badge bg-success badge-skill">Android / Java</span>
+          </div>
+
+          <p class="skill-group">Backend &amp; Veri Tabanı</p>
+          <div>
+            <span class="badge bg-dark badge-skill">ASP.NET Core</span>
             <span class="badge bg-danger badge-skill">MSSQL</span>
+            <span class="badge bg-success badge-skill">MongoDB</span>
+          </div>
+
+          <p class="skill-group">Frontend</p>
+          <div>
+            <span class="badge bg-danger badge-skill">HTML5</span>
+            <span class="badge bg-primary badge-skill">CSS3</span>
+            <span class="badge bg-info text-dark badge-skill">Bootstrap</span>
+            <span class="badge bg-secondary badge-skill">React (Temel)</span>
+          </div>
+
+          <p class="skill-group">Veri &amp; ML</p>
+          <div>
             <span class="badge bg-secondary badge-skill">Pandas</span>
+            <span class="badge bg-primary badge-skill">NumPy</span>
             <span class="badge bg-info text-dark badge-skill">Scikit-learn</span>
+          </div>
+
+          <p class="skill-group">Diğer</p>
+          <div>
+            <span class="badge bg-dark badge-skill">OOP</span>
+            <span class="badge bg-danger badge-skill">Git</span>
+            <span class="badge bg-secondary badge-skill">Algoritma Tasarımı</span>
+            <span class="badge bg-success badge-skill">Modüler Kod</span>
           </div>
         </div>
 
         <!-- Kişisel Bilgiler -->
         <div class="card shadow-sm p-4 mb-4">
-          <p class="section-title">Dil & Kişisel Bilgiler</p>
+          <p class="section-title">Dil &amp; Kişisel Bilgiler</p>
           <ul class="list-unstyled mb-0" style="line-height: 2;">
-            <li><span class="fw-semibold">İngilizce:</span> Temel · Geliştirme sürecinde</li>
+            <li><span class="fw-semibold">İngilizce:</span> Aktif olarak geliştiriliyor</li>
             <li><span class="fw-semibold">Beceriler:</span> Ekip çalışması · Zaman yönetimi · Yeniliklere açık</li>
-            <li><span class="fw-semibold">İlgi Alanları:</span> Veri analizi · Mobil uygulama geliştirme · Açık kaynak yazılım</li>
+            <li><span class="fw-semibold">İlgi Alanları:</span> Mobil uygulama geliştirme · Veri analizi · Makine öğrenmesi</li>
           </ul>
         </div>
 

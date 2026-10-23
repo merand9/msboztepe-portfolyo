@@ -1,60 +1,128 @@
- body {
-      background-color: #867e89;
-    }
-	
-
-.foto{
-	border:2px solid black;
-	padding:2px;
-	margin-top: 60px;
-	margin-left: 20px;
-	width: 400px;
-	height: 500px;
-	display: inline-block;
+body {
+	background-color: #867e89;
 }
 
-.foto-yazi{
-	display:flex;
-	align-items: center;
-	padding: 20px;
-  }
-  .yazi p {
-	font-size: 20px;
+/* ---------- Navbar ---------- */
+/* Telefonda da menü yan yana dursun, sayfa içeriğinin üstünü kapatmasın */
+.navbar-nav {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+.navbar-nav .nav-link {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.navbar-nav .nav-link {
 	font-family: 'Times New Roman', Times, serif;
-	margin: 10px;
-	display: inline-block;
-  }
-  
-  @media screen and (max-width: 800px) {
-	.yazi p {
-	  font-size: 17px;
-	}
-  }
-  
-  @media screen and (max-width: 400px) {
-	.yazi p {
-	  font-size: 14px;
-	}
-  }
-
-  .navbar-nav .nav-link{
-	font-family: 'Times New Roman', Times, serif;
-	font:bold;
-  }
-  .navbar-nav .nav-link:hover{
-	   background-color: #867e89;
-	   color: black;
-
-  }
-  .navbar-nav .nav-link:active{
+	font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+	background-color: #867e89;
+	color: black;
+}
+.navbar-nav .nav-link:active {
 	background-color: white;
-	color:#867e89
-  }
-  
+	color: #867e89;
+}
 
+/* ---------- Ana sayfa ---------- */
+.hero {
+	padding-top: 90px;
+}
 
+.hero-kart {
+	background: #f4f1f5;
+	border-radius: 16px;
+	padding: 48px 40px;
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
 
-		
-		
-		
+.hero-ust {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	color: #6b6370;
+	margin-bottom: 4px;
+}
 
+.hero-isim {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #2b262e;
+	margin-bottom: 6px;
+}
+
+.hero-unvan {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #867e89;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.hero-metin {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	line-height: 1.7;
+	max-width: 760px;
+	color: #2b262e;
+}
+
+.hero-butonlar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 24px;
+}
+
+.rakamlar {
+	margin-top: 8px;
+	padding-top: 16px;
+}
+
+.rakam {
+	background: #2b262e;
+	color: #fff;
+	border-radius: 12px;
+	padding: 18px 12px;
+	text-align: center;
+}
+.rakam strong {
+	display: block;
+	font-size: 1.8rem;
+	line-height: 1.1;
+}
+.rakam span {
+	font-size: 0.9rem;
+	color: #d6d0d9;
+}
+
+.alan {
+	background: #f4f1f5;
+	border-radius: 12px;
+	padding: 24px;
+	height: 100%;
+	border-top: 4px solid #2b262e;
+}
+.alan h2 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.alan p {
+	margin: 0;
+	color: #4a434d;
+}
+
+@media screen and (max-width: 800px) {
+	.hero-kart { padding: 32px 22px; }
+	.hero-isim { font-size: 2.2rem; }
+	.hero-metin { font-size: 17px; }
+}
+
+@media screen and (max-width: 400px) {
+	.hero-isim { font-size: 1.8rem; }
+	.hero-metin { font-size: 15px; }
+}

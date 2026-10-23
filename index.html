@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <meta name="author" content="Merve Sude Boztepe">
-   <title>Merve Sude Boztepe|Portföy</title>
+   <title>Merve Sude Boztepe | Portföy</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
-<div>
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
    <div class="container-fluid">
      <ul class="navbar-nav">
-      <li class="nav-item">
-         <a class="nav-link" href="index.html">Ana Sayfa</a>
+       <li class="nav-item">
+         <a class="nav-link active" href="index.html">Ana Sayfa</a>
        </li>
        <li class="nav-item">
          <a class="nav-link" href="hakkimda.html">Hakkımda</a>
@@ -28,21 +27,59 @@
        </li>
      </ul>
    </div>
- 
- </nav> 
-   <div class="foto-yazi">
-      <div><a href="portfolyo.html">
-         <img class="foto" src="fotografım.jpeg">
-      </a></div>
-   <div class="yazi">
-      <p>Merhabalar,ben Merve Sude Boztepe.Bandırma Onyedi Eylül Üniversitesi'nde Yazılım Mühendisliği 3. sınııf öğrencisiyim. 
-         Kendini geliştirmeye istekli, ekip çalışmalarına uygun biriyim.Mobil uygulama geliştirme üzerine ilk stajımı yaptım.
-         Algoritma ve programlama temeline sahibim.Mobil uygulama geliştirme ve veri analizi alanlarına ilgi duyuyorum.
+</nav>
+
+<main class="container hero">
+
+   <!-- Tanıtım -->
+   <section class="hero-kart">
+      <p class="hero-ust">Merhaba, ben</p>
+      <h1 class="hero-isim">Merve Sude Boztepe</h1>
+      <p class="hero-unvan">Yazılım Mühendisliği Öğrencisi · Mobil &amp; Veri</p>
+      <p class="hero-metin">
+         Bandırma Onyedi Eylül Üniversitesi'nde Yazılım Mühendisliği okuyorum.
+         Flutter/Dart ile mobil uygulamalar geliştiriyor, Python ile veri analizi ve
+         makine öğrenmesi üzerine çalışıyorum. Argede Bilişim'deki stajımda Ramakkala mobil
+         uygulamasına katkı sağladım, SoftAI'daki stajımda sahtekarlık tespiti üzerine çalıştım.
       </p>
-   </div>
-   </div>
-   
-   
-</div>
+      <div class="hero-butonlar">
+         <a href="projelerim.html" class="btn btn-dark btn-lg">Projelerimi Gör</a>
+         <a href="Merve_Sude_Boztepe_CV.pdf" class="btn btn-outline-dark btn-lg" download>CV'mi İndir</a>
+         <a href="iletisim.html" class="btn btn-outline-dark btn-lg">İletişime Geç</a>
+      </div>
+   </section>
+
+   <!-- Kısa rakamlar -->
+   <section class="row g-3 rakamlar">
+      <div class="col-6 col-md-3"><div class="rakam"><strong>2</strong><span>Şirket stajı</span></div></div>
+      <div class="col-6 col-md-3"><div class="rakam"><strong>7+</strong><span>Proje</span></div></div>
+      <div class="col-6 col-md-3"><div class="rakam"><strong>8</strong><span>Sertifika</span></div></div>
+      <div class="col-6 col-md-3"><div class="rakam"><strong>3.11</strong><span>GPA / 4.00</span></div></div>
+   </section>
+
+   <!-- Odak alanları -->
+   <section class="row g-4 mt-1 mb-5">
+      <div class="col-md-4">
+         <div class="alan">
+            <h2>Mobil Geliştirme</h2>
+            <p>Flutter &amp; Dart ile widget tabanlı arayüzler, navigasyon ve state management.</p>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="alan">
+            <h2>Veri &amp; Makine Öğrenmesi</h2>
+            <p>Pandas, NumPy ve Scikit-learn ile veri madenciliği ve sınıflandırma modelleri.</p>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="alan">
+            <h2>Backend &amp; Veri Tabanı</h2>
+            <p>ASP.NET Core, MSSQL ve MongoDB ile veri tabanı tasarımı ve sorgu optimizasyonu.</p>
+         </div>
+      </div>
+   </section>
+
+</main>
+
 </body>
 </html>
